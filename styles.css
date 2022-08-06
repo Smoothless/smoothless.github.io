@@ -1,0 +1,351 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(224,186,139);
+background: linear-gradient(90deg, rgba(228,213,195,1) 0%, rgba(219,211,168,1) 35%, rgba(236,240,178,1) 100%);
+    background-repeat: cover;
+}
+
+header {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 7%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.navegacion {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    font-size: 2em;
+    animation-name: mouse-sobre;
+    animation-duration: 1s;
+}
+
+.navegacion a:hover {
+    transform: scale(120%);
+    transition: .2s ease;
+}
+
+.navegacion ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.titulo {
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    padding-left: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.foto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 200px 0 70px 0;
+}
+
+.texto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 70px 0 70px 0;
+    font-size: 2em;
+}
+
+.footer {
+    width: 100%;
+    height: 7%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+}
+
+.productos {
+    position: relative;
+    margin: auto;
+    margin-top: 7%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.producto {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: aliceblue;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.inferior {
+    margin-bottom: 5%;
+}
+
+.precio {
+    color: grey;
+    font-size: 22px;
+}
+  
+.producto button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 70%;
+    font-size: 18px;
+    margin: 5px;
+    border-radius: 10%;
+}
+  
+.producto button:hover {
+    transform: scale(105%);
+    transition: .2s ease;
+}
+
+.producto img {
+    aspect-ratio: 7/9;
+    width: 100%;
+}
+
+.formulario {
+    width: 100%;
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.formulario fieldset {
+    width: 500px;
+}
+
+.formulario legend {
+    text-align: center;
+}
+
+.formulario label {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 10px;
+}
+
+.formulario input {
+    width: 80%;
+    height: 2em;
+    display: flex;
+    margin: auto;
+}
+
+.opciones {
+    width: 80%;
+    height: 2em;
+    display: flex;
+    margin: auto;
+}
+
+.button {
+    display: flex;
+    margin: auto;
+    padding: auto;
+}
+
+.button input {
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+}
+
+.subtitulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 250px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.pasos {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+    top: 300px;
+    font-size: 28px;
+}
+
+.container-corazon {
+    margin: 20% auto;
+    overflow: hidden;
+}
+
+.corazon {
+    font-size: 200px;
+    text-align: center;
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+    0% {transform: scale(100%)}
+    50% {transform: scale(120%);}
+}
+
+.talles {
+    width: 100%;
+    top: 150px;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+}
+.talles td {
+    height: 100px;
+    width: 200px;
+    border: groove;
+    background-color: rgba(250, 250, 250, 0.24);
+}
+
+@media (max-width: 1900px) {
+    
+    .titulo {
+        display: none;
+    }
+
+    .subtitulo, .pasos {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1350px) {
+    
+    .titulo {
+        display: none;
+    }
+
+    .navegacion ul {
+        gap: 50px;
+    }
+
+    .productos {
+        display: block;
+        top: 250px;
+        margin: 0 10% 0 10%;
+    }
+
+    .producto {
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .foto {
+        overflow: hidden;
+    }
+
+    .subtitulo, .pasos {
+        text-align: center;
+    }
+    
+    .container-corazon {
+        margin: 50% auto;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    header {
+        display: flex;
+        height: 10%;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .footer {
+        display: inline;
+        text-align: center;
+        font-size: 24px;
+        height: 10%;
+    }
+
+    .foto {
+        overflow: hidden;
+    }
+
+    .formulario {
+        top: 140px;
+    }
+
+    .talles td {
+        height: 150px;
+    }
+}
+
+header {
+  font-size: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.button, .limpiar, .enviar {
+  display: flex;
+  margin: auto;
+  padding: auto;
+}
+.button input, .limpiar input, .enviar input {
+  width: 150px;
+  height: 50px;
+  justify-content: center;
+}
+
+.enviar {
+  background-color: #a7e69f;
+}
+
+.limpiar {
+  background-color: #ec8c8c;
+}
+
+.footer {
+  height: 7%;
+  width: 100%;
+  align-items: center;
+}/*# sourceMappingURL=styles.css.map */

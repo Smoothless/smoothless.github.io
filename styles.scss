@@ -1,0 +1,48 @@
+$verde: #a7e69f;
+$rojo: #ec8c8c;
+    
+@mixin size($ancho, $alto) {
+    height: $alto;
+    width: $ancho;
+}
+    
+
+$estilo: (
+    color: #ffffff,
+    centro: center,
+    fuente: 1em,
+    ancho-completo: 100%,
+);
+
+header {
+    font-size: map-get($estilo, fuente);
+    text-align: map-get($estilo, centro);
+    width: map-get($estilo, ancho-completo);
+}
+
+.button {
+    display: flex;
+    margin: auto;
+    padding: auto;
+    
+    input{
+        width: 150px;
+        height: 50px;
+        justify-content: center;    
+    }
+}
+
+.enviar {
+    @extend .button;
+    background-color: $verde
+}
+
+.limpiar {
+    @extend .button;
+    background-color: $rojo    
+}
+
+.footer {
+    @include size(100%,7%);
+    align-items: map-get($estilo, centro);
+}     

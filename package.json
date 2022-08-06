@@ -1,0 +1,22 @@
+{
+  "name": "proyecto3.html",
+  "version": "1.0.0",
+  "description": "Entrega de Proyecto Final 3 para CoderHouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Smoothless/coderhouse-lucianocanovas.git#main"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Smoothless/coderhouse-lucianocanovas/issues"
+  },
+  "homepage": "https://github.com/Smoothless/coderhouse-lucianocanovas/tree/main#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
